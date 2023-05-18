@@ -354,11 +354,8 @@
 
 })();
 
-
-
-
 let deferredPrompt; // 宣告 deferredPrompt 變數
-const floatButton = document.querySelector('.a2hs-float-button');
+const floatButton = document.querySelector('a2hs-float-button');
 
 window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
@@ -374,6 +371,7 @@ function showAddToHomeScreenButton() {
         deferredPrompt.prompt();
 
         deferredPrompt.userChoice.then((choiceResult) => {
+            console.log('click button.');
             if (choiceResult.outcome === 'accepted') {
                 console.log('User accepted the A2HS prompt.');
             } else {
