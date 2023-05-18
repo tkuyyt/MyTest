@@ -355,23 +355,23 @@
 })();
 
 let deferredPrompt; // 宣告 deferredPrompt 變數
-const floatButton = document.querySelector('a2hs-float-button');
+const floatButton = document.querySelector('.add-button');
+floatButton.style.display = "none";
 
 window.addEventListener('beforeinstallprompt', (event) => {
+
+    console.log('in event.');
     event.preventDefault();
     deferredPrompt = event;
-    showAddToHomeScreenButton(); // 在 beforeinstallprompt 事件觸發時顯示按鈕
-});
 
-// 顯示浮動按鈕
-function showAddToHomeScreenButton() {
     floatButton.style.display = 'block';
     floatButton.addEventListener('click', (e) => {
+        console.log('click button.');
         floatButton.style.display = "none";
         deferredPrompt.prompt();
 
         deferredPrompt.userChoice.then((choiceResult) => {
-            console.log('click button.');
+            console.log('select.');
             if (choiceResult.outcome === 'accepted') {
                 console.log('User accepted the A2HS prompt.');
             } else {
@@ -379,6 +379,5 @@ function showAddToHomeScreenButton() {
             }
             deferredPrompt = null;
         });
-
     });
-}
+});
