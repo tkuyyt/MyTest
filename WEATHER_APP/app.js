@@ -367,9 +367,9 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
     floatButton.style.display = 'block';
     floatButton.addEventListener('click', (e) => {
+        deferredPrompt.prompt();
         console.log('click button.');
         floatButton.style.display = "none";
-        deferredPrompt.prompt();
 
         deferredPrompt.userChoice.then((choiceResult) => {
             console.log('select.');
