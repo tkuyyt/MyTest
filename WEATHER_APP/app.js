@@ -356,7 +356,9 @@
 
 
 
+
 let deferredPrompt; // 宣告 deferredPrompt 變數
+const floatButton = document.querySelector('.a2hs-float-button');
 
 window.addEventListener('beforeinstallprompt', (event) => {
     event.preventDefault();
@@ -366,20 +368,19 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
 // 顯示浮動按鈕
 function showAddToHomeScreenButton() {
-    const floatButton = document.getElementById('a2hs-float-button');
     floatButton.style.display = 'block';
+    floatButton.addEventListener('click', (e) => {
+        floatButton.style.display = "none";
+        deferredPrompt.prompt();
 
-    floatButton.addEventListener('click', () => {
-        if (deferredPrompt) {
-            deferredPrompt.prompt();
-            deferredPrompt.userChoice.then((choiceResult) => {
-                if (choiceResult.outcome === 'accepted') {
-                    console.log('User accepted the A2HS prompt.');
-                } else {
-                    console.log('User dismissed the A2HS prompt.');
-                }
-                deferredPrompt = null;
-            });
-        }
+        deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+                console.log('User accepted the A2HS prompt.');
+            } else {
+                console.log('User dismissed the A2HS prompt.');
+            }
+            deferredPrompt = null;
+        });
+
     });
 }
