@@ -356,7 +356,7 @@
 
 let deferredPrompt; // 宣告 deferredPrompt 變數
 const floatButton = document.querySelector('.add-button');
-floatButton.style.display = "none";
+floatButton.style.display = "block";
 
 window.addEventListener('beforeinstallprompt', (event) => {
 
