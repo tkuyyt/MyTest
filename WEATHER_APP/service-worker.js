@@ -57,7 +57,7 @@ self.addEventListener('activate', function(e) {
 
 self.addEventListener('fetch', function(e) {
   console.log('[Service Worker] Fetch', e.request.url);
-  /*var dataUrl = 'https://query.yahooapis.com/v1/public/yql';
+  var dataUrl = 'https://query.yahooapis.com/v1/public/yql';
   if (e.request.url.indexOf(dataUrl) > -1) {
     e.respondWith(
       caches.open(dataCacheName).then(function(cache) {
@@ -73,5 +73,5 @@ self.addEventListener('fetch', function(e) {
         return response || fetch(e.request);
       })
     );
-  }*/
+  }
 });
