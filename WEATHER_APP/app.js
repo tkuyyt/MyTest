@@ -177,11 +177,11 @@
       if (request.readyState === XMLHttpRequest.DONE) {
         if (request.status === 200) {
             var response = JSON.parse(request.response);
-            var results = response.query.results;
+         /*   var results = response.query.results;
           results.key = key;
           results.label = label;
           results.created = response.query.created;
-          app.updateForecastCard(results);
+          app.updateForecastCard(results);*/
         }
       } else {
         // Return the initial weather forecast since no data is available.
