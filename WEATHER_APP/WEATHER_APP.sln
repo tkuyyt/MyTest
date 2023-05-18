@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{811F6997-3E4B-4B66-8D79-D123A4E10AE9}"
+	ProjectSection(SolutionItems) = preProject
+		index.html = index.html
+		manifest.json = manifest.json
+		app.js = app.js
+		styles\inline.css = styles\inline.css
+		service-worker.js = service-worker.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "styles", "styles", "{264F8F1C-A8F9-4EB1-A33C-72AD733C6256}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{1E3EB8DB-8C4D-4A92-A3AB-CF3AB52F2709}"
+	ProjectSection(SolutionItems) = preProject
+		images\clear.png = images\clear.png
+		images\cloudy_s_sunny.png = images\cloudy_s_sunny.png
+		images\cloudy-scattered-showers.png = images\cloudy-scattered-showers.png
+		images\cloudy.png = images\cloudy.png
+		images\fog.png = images\fog.png
+		images\ic_add_white_24px.svg = images\ic_add_white_24px.svg
+		images\ic_refresh_white_24px.svg = images\ic_refresh_white_24px.svg
+		images\partly-cloudy.png = images\partly-cloudy.png
+		images\rain.png = images\rain.png
+		images\scattered-showers.png = images\scattered-showers.png
+		images\sleet.png = images\sleet.png
+		images\snow.png = images\snow.png
+		images\thunderstorm.png = images\thunderstorm.png
+		images\wind.png = images\wind.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "icons", "icons", "{E125C4C1-2403-4CC1-8331-268F64590265}"
+	ProjectSection(SolutionItems) = preProject
+		images\icons\icon-32x32.png = images\icons\icon-32x32.png
+		images\icons\icon-128x128.png = images\icons\icon-128x128.png
+		images\icons\icon-144x144.png = images\icons\icon-144x144.png
+		images\icons\icon-152x152.png = images\icons\icon-152x152.png
+		images\icons\icon-192x192.png = images\icons\icon-192x192.png
+		images\icons\icon-256x256.png = images\icons\icon-256x256.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3E4EF76-E5EA-4401-B263-6BA0BB681EC0}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E125C4C1-2403-4CC1-8331-268F64590265} = {1E3EB8DB-8C4D-4A92-A3AB-CF3AB52F2709}
+	EndGlobalSection
+EndGlobal

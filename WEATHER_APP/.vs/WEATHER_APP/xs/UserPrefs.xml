@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="index.html">
+    <Files>
+      <File FileName="index.html" Line="40" Column="1" IsPinned="True" />
+      <File FileName="manifest.json" Line="13" Column="30" />
+      <File FileName="app.js" Line="170" Column="10" />
+      <File FileName="service-worker.js" Line="17" Column="23" />
+      <File FileName="styles/inline.css" Line="41" Column="33" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WEATHER_APP" expanded="True">
+            <Node name="Solution Items" expanded="True">
+              <Node name="/Users/yutingyang/Projects/WEATHER_APP/app.js" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
