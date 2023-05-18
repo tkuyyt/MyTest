@@ -1,33 +1,33 @@
 var dataCacheName = 'weatherData-v1';
 var cacheName = 'WEATHER_APP';
 var filesToCache = [
-  '/',
-  'index.html',
-  'app.js',
-  'styles/inline.css',
-  'images/clear.png',
-  'images/cloudy-scattered-showers.png',
-  'images/cloudy.png',
-  'images/fog.png',
-  'images/ic_add_white_24px.svg',
-  'images/ic_refresh_white_24px.svg',
-  'images/partly-cloudy.png',
-  'images/rain.png',
-  'images/scattered-showers.png',
-  'images/sleet.png',
-  'images/snow.png',
-  'images/thunderstorm.png',
-  'images/wind.png'
+  '/WEATHER_APP/',
+  '/WEATHER_APP/index.html',
+  '/WEATHER_APP/app.js',
+  '/WEATHER_APP/styles/inline.css',
+  '/WEATHER_APP/images/clear.png',
+  '/WEATHER_APP/images/cloudy-scattered-showers.png',
+  '/WEATHER_APP/images/cloudy.png',
+  '/WEATHER_APP/images/fog.png',
+  '/WEATHER_APP/images/ic_add_white_24px.svg',
+  '/WEATHER_APP/images/ic_refresh_white_24px.svg',
+  '/WEATHER_APP/images/partly-cloudy.png',
+  '/WEATHER_APP/images/rain.png',
+  '/WEATHER_APP/images/scattered-showers.png',
+  '/WEATHER_APP/images/sleet.png',
+  '/WEATHER_APP/images/snow.png',
+  '/WEATHER_APP/images/thunderstorm.png',
+  '/WEATHER_APP/images/wind.png'
 ];
 
 self.addEventListener('install', function(e) {
   console.log('[ServiceWorker] Install');
-  /*e.waitUntil(
+  e.waitUntil(
     caches.open(cacheName).then(function(cache) {
       console.log('[ServiceWorker] Caching app shell');
-      return cache.addAll(filesToCache);
+      cache.addAll(filesToCache);
     })
-  );*/
+  );
 });
 
 self.addEventListener('activate', function(e) {
@@ -37,7 +37,7 @@ self.addEventListener('activate', function(e) {
       return Promise.all(keyList.map(function(key) {
         if (key !== cacheName && key !== dataCacheName) {
           console.log('[ServiceWorker] Removing old cache', key);
-          return caches.delete(key);
+          caches.delete(key);
         }
       }));
     })
